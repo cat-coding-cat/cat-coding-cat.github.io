@@ -2,9 +2,11 @@ body {
   background-color: rgb(63, 71, 68);
   color: white;
 }
-img {
-  max-width: 100%;
-  height: auto;
+#scale-image{
+	width:100%;
+	height:auto;
+	max-width: 75vw;
+
 }
 h1 {
   color: white;
