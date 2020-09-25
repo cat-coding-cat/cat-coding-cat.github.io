@@ -2,11 +2,10 @@ body {
   background-color: rgb(63, 71, 68);
   color: white;
 }
-#scale-image{
+#libreta{
 	width:100%;
 	height:auto;
-	max-width: 75vw;
-
+	max-width: 40vw;
 }
 h1 {
   color: white;
