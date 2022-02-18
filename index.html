@@ -6,35 +6,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<!-- ============================================================================== --> 
-
 <body>
-    <h1 style="text-align: center;">Virtual research group</h1>
-    <h1>Technology, arts and computer science within live coding</h1>
-    
-    
-    <h2>Objective </h2>
-    
-    <p title="Research group spirit" style="text-align: center;">
-     <img src="llibreta_amb_screen_imagen_para_talleres2019.jpeg" alt="Girl in a jacket"> 
-    The virtual research group aims to analyze the existing feedback loop between live coding practices, art, technology and science.
-    From this perspective, the group will produce critical reflections that accompany and give context to the activities carried out within the project.
-    The idea is observe the relationships across disciplines. For example, relationships between live coding and machine learning, the many levels of live coding programming languages, algorithms as creative tools, etc.
-    
-    </p>
-    
-    <p>
-    An extended version of these topics (but that may not be limited to) can be found at the Limerick ICLC site:
-    
-    THEORIES OF LIVE CODING: 
-    Live Coding and Open Source Culture, Ethics Of Live Coding, Audience Perspectives and Heterophenomenologies, Aesthetics, Esolang, Philosophy Of Software, Inclusion/Equity, Cultural Processes, Phenomenology Of Live Code, Live Coding And Embodiment, Philosophy of Code and Computation.
-
-
-    TECHNOLOGIES OF LIVE CODING: 
-    Programming Language Design, Web Live Coding, Live Coding and Autonomous Agents, AI And Live Coding, Live Coding Maker Movement, Live Coding Ecosystems, Experience Design, Visualising Live Process, Interface Design, CUIs:Code As Live User Interface
-
-
-    </p>
+    <input type="file" name="inputfile"
+            id="inputfile">
+    <br>
+   
+    <pre id="output"></pre>
+      
+    <script type="text/javascript">
+        cont readLastLines = require('read-last-lines');
+        readLastLines.read('./demo.txt',3)
+        .then((lines) => console.log(lines));
+    </script>
   
   </body>
 </html>
